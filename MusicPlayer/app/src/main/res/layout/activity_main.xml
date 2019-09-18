@@ -4,15 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1f2635"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/menu"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/currentsong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/current_song_image"
+        app:layout_constraintTop_toBottomOf="@id/menu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/prev_song_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/currentsong"
+        android:layout_marginTop="70dp"/>
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next_song_image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/currentsong"
+        android:layout_marginTop="70dp"/>
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play_button"
+        app:layout_constraintTop_toBottomOf="@id/currentsong"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="300dp"/>
+
+    <ImageView
+        android:id="@+id/forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fast_forward"
+        app:layout_constraintTop_toBottomOf="@id/currentsong"
+        app:layout_constraintLeft_toLeftOf="@id/play"
+        app:layout_constraintTop_toTopOf="@id/play"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="6dp"/>
+
+    <ImageView
+        android:id="@+id/revind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/revind"
+        app:layout_constraintTop_toBottomOf="@id/currentsong"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/play"
+        app:layout_constraintRight_toRightOf="@id/play"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="6dp"/>
+
+    <ImageView
+        android:id="@+id/repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/repeat"
+        app:layout_constraintTop_toBottomOf="@id/currentsong"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/play"
+        app:layout_constraintRight_toRightOf="@id/revind"
+        android:layout_marginTop="6dp"/>
+
+    <ImageView
+        android:id="@+id/speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/speaker"
+        app:layout_constraintTop_toBottomOf="@id/currentsong"
+        app:layout_constraintLeft_toLeftOf="@id/forward"
+        app:layout_constraintTop_toTopOf="@id/play"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="6dp"/>
+
+    <ImageView
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wave"
+        app:layout_constraintTop_toBottomOf="@id/currentsong"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="130dp"/>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
