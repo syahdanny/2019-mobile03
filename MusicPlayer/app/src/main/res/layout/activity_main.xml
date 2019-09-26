@@ -107,6 +107,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/wave"
         app:layout_constraintTop_toBottomOf="@id/currentsong"
+        android:scaleType="centerCrop"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="130dp"/>
